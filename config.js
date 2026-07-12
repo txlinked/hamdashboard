@@ -141,13 +141,13 @@ var aIMG = [
 ],
 
 [
-"CENTRAL TEXAS RADAR",
+"KFWS CENTRAL TEXAS RADAR",
 "https://radar.weather.gov/ridge/standard/KFWS_loop.gif"
 ],
 
 [
-"SEVERE WEATHER OUTLOOK",
-"https://www.spc.noaa.gov/products/outlook/day1otlk.gif"
+"KGRK CENTRAL TEXAS RADAR",
+"https://radar.weather.gov/ridge/standard/KGRK_loop.gif"
 ],
 
 [
@@ -161,8 +161,8 @@ var aIMG = [
 ],
 
 [
-"GULF OF MEXICO SATELLITE",
-"https://cdn.star.nesdis.noaa.gov/GOES19/ABI/SECTOR/gm/GEOCOLOR/GOES19-GM-GEOCOLOR-600x600.gif"
+"GOES-19 CONUS SATELLITE",
+"https://cdn.star.nesdis.noaa.gov/GOES19/ABI/CONUS/GEOCOLOR/GOES19-CONUS-GEOCOLOR-625x375.gif"
 ],
 
 [
@@ -196,12 +196,12 @@ var aIMG = [
 ]
 ];
 
-// Tile refresh and rotation delays in milliseconds
+// Tile refresh and image-rotation delays in milliseconds
 
 var tileDelay = [
 30000,
 30000,
-60000,
+30000,
 30000,
 
 30000,
