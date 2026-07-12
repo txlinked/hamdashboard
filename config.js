@@ -11,14 +11,21 @@ var layout_rows = 3;
 // Format:
 // ["COLOR", "MENU TEXT", "URL", "SCALE", "SIDE"]
 //
-// Leave SIDE blank for the left menu.
-// Use "R" for the right menu.
+// No side setting = left side
+// "R" = right side
 
 var aURL = [
 [
 "f3de21",
 "SATS",
 "satellite.js"
+],
+
+[
+"2196F3",
+"SUPERMON",
+"https://hotarc.txlinked.com/supermon/link.php?nodes=645310,559820,559822,503600",
+"1"
 ],
 
 [
@@ -128,26 +135,32 @@ var aURL = [
 ];
 
 // Dashboard tiles
-// There are 12 tiles total.
+// A 4 by 3 grid requires exactly 12 tiles.
 
 var aIMG = [
 [
-[
-"CONUS RADAR LARGE",
-"CONUS RADAR"
-],
-"https://radar.weather.gov/ridge/standard/CONUS-LARGE_loop.gif",
-"https://radar.weather.gov/ridge/standard/CONUS_loop.gif"
+"W5ZDN SUPERMON",
+"iframe|https://hotarc.txlinked.com/supermon/link.php?nodes=645310,559820,559822,503600"
 ],
 
 [
-"KFWS CENTRAL TEXAS RADAR",
+"CENTRAL TEXAS RADAR",
 "https://radar.weather.gov/ridge/standard/KFWS_loop.gif"
 ],
 
 [
-"KGRK CENTRAL TEXAS RADAR",
+"CENTRAL TEXAS RADAR SOUTH",
 "https://radar.weather.gov/ridge/standard/KGRK_loop.gif"
+],
+
+[
+"CONUS RADAR",
+"https://radar.weather.gov/ridge/standard/CONUS_loop.gif"
+],
+
+[
+"CONUS RADAR LARGE",
+"https://radar.weather.gov/ridge/standard/CONUS-LARGE_loop.gif"
 ],
 
 [
@@ -156,50 +169,40 @@ var aIMG = [
 ],
 
 [
-"SOUTHERN PLAINS SATELLITE",
-"https://cdn.star.nesdis.noaa.gov/GOES19/ABI/SECTOR/sp/GEOCOLOR/GOES19-SP-GEOCOLOR-600x600.gif"
-],
-
-[
-"GOES-19 CONUS SATELLITE",
-"https://cdn.star.nesdis.noaa.gov/GOES19/ABI/CONUS/GEOCOLOR/GOES19-CONUS-GEOCOLOR-625x375.gif"
-],
-
-[
 "NORTH AMERICA LIGHTNING",
 "https://images.lightningmaps.org/blitzortung/america/index.php?animation=usa"
 ],
 
 [
-"WACO FORECAST",
+"WACO WEATHER FORECAST",
 "https://forecast.weather.gov/meteograms/Plotter.php?lat=31.55&lon=-97.15&wfo=FWD&zcode=TXZ118&gset=18&gdiff=3&unit=0&tinfo=CY6&ahour=0&pcmd=111011111111100000000000000000000000000000000000000000000"
-],
-
-[
-"TEXAS SATELLITE",
-"https://cdn.star.nesdis.noaa.gov/GOES19/ABI/SECTOR/sp/GEOCOLOR/GOES19-SP-GEOCOLOR-600x600.gif"
-],
-
-[
-"CENTRAL TEXAS RADAR WIDE",
-"https://radar.weather.gov/ridge/standard/KFWS_loop.gif"
-],
-
-[
-"SPACE WEATHER",
-"https://services.swpc.noaa.gov/images/planetary-k-index.gif"
 ],
 
 [
 "HF PROPAGATION",
 "https://www.hamqsl.com/solar101vhf.php"
+],
+
+[
+"PLANETARY K INDEX",
+"https://services.swpc.noaa.gov/images/planetary-k-index.gif"
+],
+
+[
+"SOLAR X-RAY FLUX",
+"https://services.swpc.noaa.gov/images/goes-xray-flux.gif"
+],
+
+[
+"DRAP ABSORPTION",
+"https://services.swpc.noaa.gov/images/animations/d-rap/global/d-rap/latest.png"
 ]
 ];
 
-// Tile refresh and image-rotation delays in milliseconds
+// Tile reload and rotation times in milliseconds
 
 var tileDelay = [
-30000,
+60000,
 30000,
 30000,
 30000,
@@ -209,8 +212,8 @@ var tileDelay = [
 30000,
 300000,
 
-30000,
-30000,
+60000,
+60000,
 60000,
 60000
 ];
