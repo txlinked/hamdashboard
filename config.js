@@ -127,8 +127,8 @@ var aURL = [
 ]
 ];
 
-// Dashboard items
-// There are 12 dashboard tiles.
+// Dashboard tiles
+// There are 12 tiles total.
 
 var aIMG = [
 [
@@ -171,23 +171,23 @@ var aIMG = [
 ],
 
 [
-"WACO WEATHER",
-"iframe|https://forecast.weather.gov/MapClick.php?lat=31.55&lon=-97.15"
+"WACO FORECAST",
+"https://forecast.weather.gov/meteograms/Plotter.php?lat=31.55&lon=-97.15&wfo=FWD&zcode=TXZ118&gset=18&gdiff=3&unit=0&tinfo=CY6&ahour=0&pcmd=111011111111100000000000000000000000000000000000000000000"
 ],
 
 [
-"WACO AIR TRAFFIC",
-"iframe|https://globe.adsbexchange.com/?airport=ACT"
+"TEXAS SATELLITE",
+"https://cdn.star.nesdis.noaa.gov/GOES19/ABI/SECTOR/sp/GEOCOLOR/GOES19-SP-GEOCOLOR-600x600.gif"
 ],
 
 [
-"CENTRAL TEXAS APRS",
-"iframe|https://aprs.fi/#!lat=31.55&lng=-97.15"
+"CENTRAL TEXAS RADAR WIDE",
+"https://radar.weather.gov/ridge/standard/KFWS_loop.gif"
 ],
 
 [
-"CTXRS",
-"iframe|https://ctxrs.org/"
+"SPACE WEATHER",
+"https://services.swpc.noaa.gov/images/planetary-k-index.gif"
 ],
 
 [
@@ -209,13 +209,13 @@ var tileDelay = [
 30000,
 300000,
 
-60000,
-60000,
+30000,
+30000,
 60000,
 60000
 ];
 
-// RSS feed items
+// RSS feeds
 // Format:
 // ["FEED URL", REFRESH INTERVAL IN MINUTES]
 
